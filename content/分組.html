@@ -1,0 +1,263 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSTemplate</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cmstemplate</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmstemplate</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='分組.html'>分組</a><li><a href='W3.html'>W3</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='W3.html'>Next</a> >> W3<br /><h1>分組</h1>
+<p _msthash="170590" _msttexthash="15116244">第1組：</p>
+<p _msthash="170591" _msttexthash="302489577">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg1網站連結/cd2022bg1倉儲連結</p>
+<p _msthash="170592" _msttexthash="1141686">40923201/40923201/<a _istranslated="1" href="https://40923201.github.io/cd2022/content/index.html"></a><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923201/cd2022">40923201/40923201</a><a _istranslated="1" href="https://40923201.github.io/cd2022bg1/content/index.html">/40923201</a>/<a _istranslated="1" href="https://github.com/40923201/cd2022bg1">40923201</a></span></p>
+<p _msthash="170593" _msttexthash="1077726">40923205 40923205 <a _istranslated="1" href="https://40923205.github.io/cd2022/content/index.html">40923205</a><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923205/cd2022">/40923205</a>/<a _istranslated="1" href="https://40923205.github.io/cd2022bg1/content/index.html">40923205</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923205/cd2022bg1">40923205</a></span></p>
+<p _msthash="170594" _msttexthash="1322087">40923208/nfu40923208/<a href="https://nfu40923208.github.io/cd2022/content/index.html">40923208</a><span>/<a href="https://github.com/nfu40923208/cd2022">40923208</a>/<a href="https://nfu40923208.github.io/cd2022bg1/content/index.html">40923208</a>/<a href="https://github.com/nfu40923208/cd2022bg1">40923208</a></span></p>
+<p _msthash="170595" _msttexthash="1432457">40923210/40923210 40923210/<a _istranslated="1" href="https://40923210.github.io/cd2022/content/index.html">40923210</a><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923210/cd2022">/40923210 40923210</a>/<a _istranslated="1" href="https://40923210.github.io/cd2022bg1/content/index.html">40923210</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923210/cd2022bg1"></a></span></p>
+<p _msthash="170596" _msttexthash="1456065">40923217 40923217 40923217/<a _istranslated="1" href="https://40923217.github.io/cd2022/content/index.html">40923217</a><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923217/cd2022">40923217</a>/<a _istranslated="1" href="https://40923217.github.io/cd2022bg1/content/index.html">40923217</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923217/cd2022bg1">40923217</a></span></p>
+<p _msthash="170597" _msttexthash="1276275">40923230 40923230 40923230 <a _istranslated="1" href="https://40923230.github.io/cd2022/content/index.html">40923230</a> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923230/cd2022">40923230 40923230</a> <a _istranslated="1" href="https://40923230.github.io/cd2022bg1/content/index.html">40923230</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923230/cd2022bg1"></a></span></p>
+<p _msthash="170598" _msttexthash="1074762">40923231 40923231 <a _istranslated="1" href="https://40923231.github.io/cd2022/content/index.html">40923231</a><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923231/cd2022">40923231</a>/<a _istranslated="1" href="https://40923231.github.io/cd2022bg1/content/index.html">40923231/40923231</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923231/cd2022bg1"></a></span></p>
+<p _msthash="170599" _msttexthash="2361138">40923235/40923235/40923235 <a _istranslated="1" href="https://40923235.github.io/cd2022/content/index.html">40923235</a><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923235/cd2022">40923235</a>/<a _istranslated="1" href="https://40923235.github.io/cd2022bg1/content/index.html">40923235/40923235/40923235</a></span> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923235/cd2022bg1">40923235</a></span></p>
+<p><span _msthash="170600" _msttexthash="15116348">第2組：</span></p>
+<p><span _msthash="170601" _msttexthash="302491033">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg2網站連結/cd2022bg2倉儲連結</span></p>
+<p><span _msthash="170602" _msttexthash="1447043">40823215 40823215/<a _istranslated="1" href="https://40823215.github.io/cd2022/content/index.html">40823215</a>/<a _istranslated="1" href="https://github.com/40823215/cd2022">40823215</a><a _istranslated="1" href="https://40823215.github.io/cd2022bg2/content/index.html">/40823215 40823215/40823215</a><a _istranslated="1" href="https://github.com/40623215/cd2022bg2"></a></span></p>
+<p><span _msthash="170603" _msttexthash="10046231">40923203/優信40923203/<a _istranslated="1" href="https://youshin40923203.github.io/cd2022/content/index.html">40923203</a>/<a _istranslated="1" href="https://github.com/youshin40923203/cd2022">40923203</a>/<a _istranslated="1" href="https://youshin40923203.github.io/cd2022bg2/content/index.html">40923203</a>/<a _istranslated="1" href="https://github.com/youshin40923203/cd2022bg2">40923203</a></span></p>
+<p><span _msthash="170604" _msttexthash="1150227">40923204/40923204/<a href="https://40923204.github.io/cd2022/content/index.html">40923204</a>/<a href="https://github.com/40923204/cd2022">40923204</a>/<a href="https://40923204.github.io/cd2022bg2/content/index.html">40923204</a>/<a href="https://github.com/40923204/cd2022bg2">40923204</a></span></p>
+<p><span _msthash="170605" _msttexthash="1011868">40923207 40923207 <a _istranslated="1" href="https://40923207.github.io/cd2022/content/index.html">40923207 40923207</a> <a _istranslated="1" href="https://github.com/40923207/cd2022">40923207</a>/<a _istranslated="1" href="https://40923207.github.io/cd2022bg2/content/index.html">40923207</a><a _istranslated="1" href="https://github.com/40923207/cd2022bg2"></a></span></p>
+<p><span _msthash="170606" _msttexthash="1325129">40923209/nfu40923209/<a href="https://nfu40923209.github.io/cd2022/content/index.html">40923209</a>/<a href="https://github.com/nfu40923209/cd2022">40923209</a>/<a href="https://nfu40923209.github.io/cd2022bg2/content/index.html">40923209</a>/<a href="https://github.com/nfu40923209/cd2022bg2">40923209</a></span></p>
+<p><span _msthash="170607" _msttexthash="1443377">40923213/40923213 40923213/<a _istranslated="1" href="https://40923213.github.io/cd2022/content/index.html">40923213</a><a _istranslated="1" href="https://github.com/40923213/cd2022">/40923213 40923213</a>/<a _istranslated="1" href="https://40923213.github.io/cd2022bg2/content/index.html">40923213</a><a _istranslated="1" href="https://github.com/40923213/cd2022bg2"></a></span></p>
+<p><span _msthash="170608" _msttexthash="998387">40923220 40923220 <a _istranslated="1" href="https://40923220.github.io/cd2022/content/index.html">40923220 40923220</a><a _istranslated="1" href="https://github.com/40923220/cd2022"></a> <a _istranslated="1" href="https://40923220.github.io/cd2022bg2/content/index.html">40923220/40923220</a><a _istranslated="1" href="https://github.com/40923220/cd2022bg2"></a></span></p>
+<p><span _msthash="170609" _msttexthash="1038609">40923240 40923240 40923240 <a _istranslated="1" href="https://40923240.github.io/cd2022/content/index.html">40923240</a><a _istranslated="1" href="https://40923240.github.io/cd2022bg2/content/index.html">/40923240</a><a _istranslated="1" href="https://github.com/40923240/cd2022">/</a><a _istranslated="1" href="https://github.com/40923240/cd2022bg2">40923240</a></span></p>
+<p><span _msthash="170610" _msttexthash="15116452">第3組：</span></p>
+<p><span _msthash="170611" _msttexthash="302492489">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg3網站連結/cd2022bg3倉儲連結</span></p>
+<p _msthash="170612" _msttexthash="1233414">40923206/40923206-1/<a href="https://40923206-1.github.io/cd2022/content/index.html">40923206</a><span>/<a href="https://github.com/40923206-1/cd2022">40923206</a></span><span>/<a href="https://40923206-1.github.io/cd2022bg3/content/index.html">40923206</a></span><span>/<a href="https://github.com/40923206-1/cd2022bg3">40923206</a></span></p>
+<p _msthash="170613" _msttexthash="1208779">40923224/s40923224/<a href="https://s40923224.github.io/cd2022/content/index.html">40923224</a><span>/<a href="https://github.com/s40923224/cd2022">40923224</a></span><span>/<a href="https://s40923224.github.io/cd2022bg3/content/index.html">40923224</a></span><span>/<a href="https://github.com/s40923224/cd2022bg3">40923224</a></span></p>
+<p _msthash="170614" _msttexthash="1161459">40923226<span _istranslated="1">/40923226/<a _istranslated="1" href="https://40923226.github.io/cd2022/content/index.html">40923226</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923226/cd2022">40923226</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923226.github.io/cd2022bg3/content/index.html">/40923226</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923226/cd2022bg3">40923226</a></span></p>
+<p _msthash="170615" _msttexthash="1155609">40923242<span _istranslated="1">/40923242/<a _istranslated="1" href="https://40923242.github.io/cd2022/content/index.html">40923242</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923242/cd2022">40923242</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923242.github.io/cd2022bg3/content/index.html">/40923242</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923242/cd2022bg3">40923242</a></span></p>
+<p _msthash="170616" _msttexthash="1241955">40923245/40923245-1/<a href="https://40923245-1.github.io/cd2022/content/index.html">40923245</a><span>/<a href="https://github.com/40923245-1/cd2022">40923245</a></span><span>/<a href="https://40923245-1.github.io/cd2022bg3/content/index.html">40923245</a></span><span>/<a href="https://github.com/40923245-1/cd2022bg3">40923245</a></span></p>
+<p _msthash="170617" _msttexthash="1169844">40923247<span _istranslated="1">/40923247/<a _istranslated="1" href="https://40923247.github.io/cd2022/content/index.html">40923247</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923247/cd2022">40923247</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923247.github.io/cd2022bg3/content/index.html">/40923247</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923247/cd2022bg3">40923247</a></span></p>
+<p _msthash="170618" _msttexthash="1253759">40923249/40923249-1/<a href="https://40923249-1.github.io/cd2022/content/index.html">40923249</a><span>/<a href="https://github.com/40923249-1/cd2022">40923249</a></span><span>/<a href="https://40923249-1.github.io/cd2022bg3/content/index.html">40923249</a></span><span>/<a href="https://github.com/40923249-1/cd2022bg3">40923249</a></span></p>
+<p _msthash="170619" _msttexthash="977418">40923252 <span _istranslated="1">40923252 40923252 <a _istranslated="1" href="https://40923252.github.io/cd2022/content/index.html">40923252</a></span> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923252/cd2022">40923252</a></span> <span _istranslated="1"><a _istranslated="1" href="https://40923252.github.io/cd2022bg3/content/index.html">40923252</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923252/cd2022bg3"></a></span></p>
+<p _msthash="170620" _msttexthash="15116556">第4組：</p>
+<p><span _msthash="170621" _msttexthash="302493945">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg4網站連結/cd2022bg4倉儲連結</span></p>
+<p _msthash="170622" _msttexthash="1148394">40623143/40623143/<a _istranslated="1" href="https://40623143.github.io/cd2022/content/index.html"></a><span _istranslated="1"><a _istranslated="1" href="https://github.com/40623143/cd2022">40623143/40623143</a><a _istranslated="1" href="https://40623143.github.io/cd2022bg4/content/index.html">/40623143</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40623143/cd2022bg4">40623143</a></span></p>
+<p _msthash="170623" _msttexthash="1120613">40723246/40723146<span _istranslated="1">/<a _istranslated="1" href="https://40723246.github.io/cd2022/content/index.html">0723146</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40723146/cd2022">40723246/40723146</a>/<a _istranslated="1" href="https://40723146.github.io/cd2022bg4/content/index.html"></a></span><span _istranslated="1"><span _istranslated="1"><a _istranslated="1" href="https://github.com/40723246/cd2022bg4">40723146</a></span></span></p>
+<p _msthash="170624" _msttexthash="1193465">40923211/a40923211/<a _istranslated="1" href="https://a40923211.github.io/cd2022/content/index.html">40923211</a><span _istranslated="1">/<a _istranslated="1" href="https://github.com/a40923211/cd2022">40923211</a></span><span _istranslated="1"><a _istranslated="1" href="https://a40923211.github.io/cd2022bg4/content/index.html">/40923211</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/a40923211/cd2022bg4">40923211</a></span></p>
+<p _msthash="170625" _msttexthash="1164384">40923218<span _istranslated="1">/40923218/<a _istranslated="1" href="https://40923218.github.io/cd2022/content/index.html">40923218/</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923218/cd2022">40923218</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923218.github.io/cd2022bg4/content/index.html">/40923218</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923218/cd2022bg4">40923218</a></span></p>
+<p _msthash="170626" _msttexthash="1001052">40923221 <span _istranslated="1">40923221 <a _istranslated="1" href="https://40923221.github.io/cd2022/content/index.html">40923221 40923221</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923221/cd2022"></a></span> <span _istranslated="1"><a _istranslated="1" href="https://40923221.github.io/cd2022bg4/content/index.html">40923221</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923221/cd2022bg4">40923221</a></span></p>
+<p _msthash="170627" _msttexthash="1152918">40923223<span _istranslated="1">/40923223/<a _istranslated="1" href="https://40923223.github.io/cd2022/content/index.html">40923223</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923223/cd2022">40923223</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923223.github.io/cd2022bg4/content/index.html">/40923223</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923223/cd2022bg4">40923223</a></span></p>
+<p _msthash="170628" _msttexthash="1088490">40923227 <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923227/cd2022bg4"></a></span><span _istranslated="1">40923227<a _istranslated="1" href="https://40923227.github.io/cd2022/content/index.html"></a> 40923227/</span><span _istranslated="1">40923227/<a _istranslated="1" href="https://github.com/40923227/cd2022"></a></span><span _istranslated="1">40923227/<a _istranslated="1" href="https://40923227.github.io/cd2022bg4/content/index.html">40923227</a></span></p>
+<p _msthash="170629" _msttexthash="1011556"><span _istranslated="1">40923243 40923243 <a _istranslated="1" href="https://40923243.github.io/cd2022/content/index.html">40923243</a></span> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923243/cd2022">40923243</a></span> <span _istranslated="1"><a _istranslated="1" href="https://40923243.github.io/cd2022bg4/content/index.html">40923243</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923243/cd2022bg4">40923243</a></span></p>
+<p _msthash="170630" _msttexthash="15116660">第5組：</p>
+<p><span _msthash="170631" _msttexthash="302495401">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg5網站連結/cd2022bg5倉儲連結</span></p>
+<p _msthash="170632" _msttexthash="1147302">40923212<span _istranslated="1">/40923212/<a _istranslated="1" href="https://40923212.github.io/cd2022/content/index.html">40923212</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923212/cd2022">40923212</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923212.github.io/cd2022bg5/content/index.html">/40923212</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923212/cd2022bg5">40923212</a></span></p>
+<p _msthash="170633" _msttexthash="1170000">40923229<span _istranslated="1">/40923229/<a _istranslated="1" href="https://40923229.github.io/cd2022/content/index.html">40923229</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923229/cd2022">40923229</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923229.github.io/cd2022bg5/content/index.html">/40923229</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923229/cd2022bg5">40923229</a></span></p>
+<p _msthash="170634" _msttexthash="1155687"><span _istranslated="1">40923233/40923233/<a _istranslated="1" href="https://40923233.github.io/cd2022/content/index.html">40923233</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923233/cd2022">40923233</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923233.github.io/cd2022bg5/content/index.html">/40923233</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923233/cd2022bg5">40923233</a></span></p>
+<p _msthash="170635" _msttexthash="1158534">40923234<span _istranslated="1">/40923234/<a _istranslated="1" href="https://40923234.github.io/cd2022/content/index.html">40923234</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923234/cd2022">40923234</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923234.github.io/cd2022bg5/content/index.html">40923234</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923234/cd2022bg5">40923234</a></span></p>
+<p _msthash="170636" _msttexthash="1167075"><span>40923237/</span><span>40923237/<a href="https://40923237.github.io/cd2022/content/index.html">40923237</a></span><span>/<a href="https://github.com/40923237/cd2022">40923237</a></span><span>/<a href="https://40923237.github.io/cd2022bg5/content/index.html">40923237</a></span><span>/<a href="https://github.com/40923237/cd2022bg5">40923237</a></span></p>
+<p _msthash="170637" _msttexthash="1008813">40923251 <span _istranslated="1">40923251 40923251 <a _istranslated="1" href="https://40923251.github.io/cd2022/content/index.html">40923251</a></span> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40923251/cd2022">40923251</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923251.github.io/cd2022bg5/content/index.html">40923251</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923251/cd2022bg5"></a></span></p>
+<p _msthash="170638" _msttexthash="1161225"><span _istranslated="1">40923253/40923253/<a _istranslated="1" href="https://40923253.github.io/cd2022/content/index.html">40923253</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923253/cd2022">40923253</a></span><span _istranslated="1"><a _istranslated="1" href="https://40923253.github.io/cd2022bg5/content/index.html">/40923253</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923253/cd2022bg5">40923253</a></span></p>
+<p _msthash="170639" _msttexthash="1005290"><span _istranslated="1">40971220 40971220</span> <span _istranslated="1"><a _istranslated="1" href="https://40971220.github.io/cd2022/content/index.html">40971220</a></span> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40971220/cd2022">40971220</a></span> <span _istranslated="1">40971220<a _istranslated="1" href="https://40971220.github.io/cd2022bg5/content/index.html"></a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40971220/cd2022bg5">40971220</a></span></p>
+<p _msthash="170640" _msttexthash="15116764">第6組：</p>
+<p><span _msthash="170641" _msttexthash="302496857">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg6網站連結/cd2022bg6倉儲連結</span></p>
+<p _msthash="170642" _msttexthash="1009905">40723217 40723217 <a _istranslated="1" href="https://40723217.github.io/cd2022/content/index.html">40723217</a> <span _istranslated="1"><a _istranslated="1" href="https://github.com/40723217/cd2022">40723217</a> <a _istranslated="1" href="https://40723217.github.io/cd2022bg6/content/index.html">40723217</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40723217/cd2022bg6">40723217</a></span></p>
+<p _msthash="170643" _msttexthash="1328093">40923219/nfu40923219/<a href="https://nfu40923219.github.io/cd2022/content/index.html">40923219</a><span>/<a href="https://github.com/nfu40923219/cd2022">40923219</a></span><span>/<a href="https://nfu40923219.github.io/cd2022bg6/content/index.html">40923219</a></span><span>/<a href="https://github.com/nfu40923219/cd2022bg6">40923219</a></span></p>
+<p _msthash="170644" _msttexthash="1158612">40923225/40923225/<a _istranslated="1" href="https://40923225.github.io/cd2022/content/index.html">40923225</a><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923225/cd2022">/40923225</a><a _istranslated="1" href="https://40923225.github.io/cd2022bg6/content/index.html">/40923225</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923225/cd2022bg6">40923225</a></span></p>
+<p _msthash="170645" _msttexthash="1152840"><span _istranslated="1">40923232/40923232/<a _istranslated="1" href="https://40923232.github.io/cd2022/content/index.html">40923232</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923232/cd2022">40923232</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923232.github.io/cd2022bg6/content/index.html">40923232</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923232/cd2022bg6">40923232</a></span></p>
+<p _msthash="170646" _msttexthash="1935115">40923236<span _istranslated="1">/40923236/<a _istranslated="1" href="https://40923236.github.io/cd2022/content/index.html">40923236</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923236/cd2022">40923236 40923236</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923236.github.io/cd2022bg6/content/index.html">40923236/40923236</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923236/cd2022bg6">40923236</a></span></p>
+<p _msthash="170647" _msttexthash="1006226"><span _istranslated="1">40923241 40923241 <a _istranslated="1" href="https://40923241.github.io/cd2022/content/index.html">40923241 40923241</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923241/cd2022"></a></span> <span _istranslated="1"><a _istranslated="1" href="https://40923241.github.io/cd2022bg6/content/index.html">40923241</a></span><span _istranslated="1">/<a _istranslated="1" href="https://github.com/40923241/cd2022bg6">40923241</a></span></p>
+<p _msthash="170648" _msttexthash="1055743">40923246 <span _istranslated="1">40923246/<a _istranslated="1" href="https://40923246.github.io/cd2022/content/index.html">40923246</a></span> <span _istranslated="1">40923246 <a _istranslated="1" href="https://github.com/40923246/cd2022">40923246</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923246.github.io/cd2022bg6/content/index.html"></a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923246/cd2022bg6">40923246</a></span></p>
+<p _msthash="170649" _msttexthash="1077336"><span _istranslated="1">40923250 40923250 <a _istranslated="1" href="https://40923250.github.io/cd2022/content/index.html">40923250</a></span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923250/cd2022">/40923250</a></span><span _istranslated="1">/<a _istranslated="1" href="https://40923250.github.io/cd2022bg6/content/index.html">40923250</a>/</span><span _istranslated="1"><a _istranslated="1" href="https://github.com/40923250/cd2022bg6">40923250</a></span></p>
+<p _msthash="170650" _msttexthash="6634628">第7組:</p>
+<p><span _msthash="170651" _msttexthash="302498313">學號/github帳號/cd2022網站連結/cd2022倉儲連結/cd2022bg7網站連結/cd2022bg7倉儲連結</span></p>
+<p _msthash="170652" _msttexthash="1150929">40723134/40723134/<a href="https://40723134.github.io/cd2022/content/index.html">40723134</a><span>/<a href="https://github.com/40723134/cd2022">40723134</a>/<a href="https://40723134.github.io/cd2022bg7/content/index.html">40723134</a></span><span>/<a href="https://github.com/40723134/cd2022bg7">40723134</a></span></p>
+<p _msthash="170653" _msttexthash="1209637">40723136/s<span>40723136/<a href="https://s40723136.github.io/cd2022/content/index.html">40723136</a>/<a href="https://github.com/s40723136/cd2022">40723136</a>/<a href="https://s40723136.github.io/cd2022bg7/content/index.html">40723136</a>/<a href="https://github.com/s40723136/cd2022bg7">40723136</a></span></p>
+<p _msthash="170654" _msttexthash="1147692">40732331/40732331/<a href="https://40732331.github.io/cd2022/content/index.html">40732331</a><span>/<a href="https://github.com/40732331/cd2022">40732331</a>/<a href="https://40732331.github.io/cd2022bg7/content/index.html">40732331</a></span><span>/<a href="https://github.com/40732331/cd2022bg7">40732331</a></span></p>
+<p _msthash="170655" _msttexthash="1152996">40923214/40923214/<a href="https://40923214.github.io/cd2022/content/index.html">40923214</a>/<a href="https://github.com/40923214/cd2022">40923214</a>/<a href="https://40923214.github.io/cd2022bg7/content/index.html">40923214</a>/<a href="https://github.com/40923214/cd2022bg7">40923214</a></p>
+<p _msthash="170656" _msttexthash="1167153">40923228/<span>40923228/<a href="https://40923228.github.io/cd2022/content/index.html">40923228</a>/<a href="https://github.com/40923228/cd2022">40923228</a><span>/<a href="https://40923228.github.io/cd2022bg7/content/index.html">40923228</a></span>/<a href="https://github.com/40923228/cd2022bg7">40923228</a></span></p>
+<p _msthash="170657" _msttexthash="1169922">40923238/<span>40923238/<a href="https://40923238.github.io/cd2022/content/index.html">40923238</a>/<a href="https://github.com/40923238/cd2022">40923238</a><span>/<a href="https://40923238.github.io/cd2022bg7/content/index.html">40923238</a></span>/<a href="https://github.com/40923238/cd2022bg7">40923238</a></span></p>
+<p _msthash="170658" _msttexthash="1172691">40923248/<span>40923248/<a href="https://40923248.github.io/cd2022/content/index.html">40923248</a>/<a href="https://github.com/40923248/cd2022">40923248</a><span>/<a href="https://40923248.github.io/cd2022bg7/content/index.html">40923248</a></span>/<a href="https://github.com/40923248/cd2022bg7">40923248</a></span></p>
+<p _msthash="170659" _msttexthash="1158690">40923216/<span>40923216/<a href="https://40923216.github.io/cd2022/content/index.html">40923216</a>/<a href="https://github.com/40923216/cd2022">40923216</a><span>/<a href="https://40923216.github.io/cd2022bg7/content/index.html">40923216</a></span>/<a href="https://github.com/40923216/cd2022bg7">40923216</a></span></p>
+<br />About << <a href='About.html'>Previous</a> <a href='W3.html'>Next</a> >> W3</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
